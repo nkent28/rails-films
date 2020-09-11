@@ -7,7 +7,7 @@ channels.keys().forEach(channels)
 const results = document.querySelector('#results');
 
 const searchMovies = (keyword) => {
-const apiUrl = `http://www.omdbapi.com/?s=${keyword}&apikey=adf1f2d7`; //keyword is a search param
+const apiUrl = `https://www.omdbapi.com/?s=${keyword}&apikey=adf1f2d7`; //keyword is a search param
 fetch(apiUrl) //request the api
   .then(response => response.json()) //parsed the json
   .then((data) => {
