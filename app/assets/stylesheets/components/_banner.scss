@@ -25,4 +25,46 @@
 
 body {background-color: #f7c5a8;}
 
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .banner {
+  background-size: top;
+  background-position: center;
+  padding: 129px 0;
+  }
+
+  .list-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  margin-top: 65px;
+}
+
+.btn {
+  margin: 0;
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+}
+
 
