@@ -15,7 +15,8 @@ fetch(apiUrl) //request the api
     data.Search.forEach((movie) => { //iterated over the array of movies and created strings
       const newMovie = `<li>
       <img src="${movie.Poster}" />
-      <p>${movie.Title}</p>
+      <p><strong>${movie.Title}</strong></p>
+      <p><strong><em>${movie.Year}</em></strong></p>
       </li>`
       results.insertAdjacentHTML('beforeend', newMovie) //data.Search is the key to call, the api is limiting the results to 10
     // inserted each movie to the list, to the end of the list
