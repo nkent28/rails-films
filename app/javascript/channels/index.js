@@ -14,7 +14,9 @@ fetch(apiUrl) //request the api
     // console.log(data);
     data.Search.forEach((movie) => { //iterated over the array of movies and created strings
       const newMovie = `<li>
+      <a href="https://www.imdb.com/title/${movie.imdbID}/">
       <img src="${movie.Poster}" />
+      </a>
       <p><strong>${movie.Title}</strong></p>
       <p><strong><em>${movie.Year}</em></strong></p>
       </li>`
@@ -34,7 +36,6 @@ fetch(apiUrl) //request the api
     });
 
     searchMovies("Wonder Woman");
-
 
 
 
