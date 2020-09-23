@@ -18,6 +18,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-top: 24px;
+  margin-left: -18px;
 }
 
 .form-inline {
@@ -40,6 +41,7 @@ body {background-color: #f7c5a8;}
     margin-left: 239px;
   }
 }
+
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
 .banner {
@@ -68,7 +70,35 @@ body {background-color: #f7c5a8;}
 .btn-danger {
   margin: 0;
   position: absolute;
-  top: 124%;
+  top: 93%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+
+.form-inline {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-danger {
+  margin: 0;
+  position: absolute;
+  top: 103%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+}
+
+@media (max-width: 350px) {
+  .btn-danger {
+  margin: 0;
+  position: absolute;
+  top: 107%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
