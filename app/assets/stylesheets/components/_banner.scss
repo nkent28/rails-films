@@ -49,16 +49,6 @@ body {background-color: #f7c5a8;}
   background-position: center;
   padding: 200px 0;
   }
-
-  .btn-danger {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: red;
-}
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
@@ -80,7 +70,7 @@ body {background-color: #f7c5a8;}
 .btn-danger {
   margin: 0;
   position: absolute;
-  top: 93%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -89,6 +79,18 @@ body {background-color: #f7c5a8;}
 
 .form-inline {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .btn-danger {
+  margin: 0;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: red;
   }
 }
 
