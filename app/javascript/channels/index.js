@@ -26,6 +26,7 @@ fetch(apiUrl) //request the api
   });
 };
 
+
   const searchForm = document.querySelector('#search-movies')
     searchForm.addEventListener('submit', (event) => {
       event.preventDefault();
