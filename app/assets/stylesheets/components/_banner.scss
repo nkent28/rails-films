@@ -40,6 +40,10 @@ body {background-color: #f7c5a8;}
   .form-inline {
     margin-left: 239px;
   }
+
+  p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 720px) {
@@ -69,6 +73,10 @@ body {background-color: #f7c5a8;}
 
 .form-inline {
     margin-left: 0px;
+  }
+
+  .btn-danger {
+    margin-top: 8px;
   }
 }
 
